@@ -712,7 +712,7 @@ class Game {
     this.frame = 0;
 
     // 创建玩家
-    this.player = new Tank(9 * TILE + (TILE - TANK_SIZE) / 2, 18 * TILE + (TILE - TANK_SIZE) / 2, true);
+    this.player = new Tank(9 * TILE + (TILE - TANK_SIZE) / 2, 17 * TILE + (TILE - TANK_SIZE) / 2, true);
     this.player.invincible = 120;
     this.tanks.push(this.player);
     this.updateUI();
@@ -741,7 +741,7 @@ class Game {
     // 重生
     setTimeout(() => {
       if (this.gameOver) return;
-      this.player = new Tank(9 * TILE + (TILE - TANK_SIZE) / 2, 18 * TILE + (TILE - TANK_SIZE) / 2, true);
+      this.player = new Tank(9 * TILE + (TILE - TANK_SIZE) / 2, 17 * TILE + (TILE - TANK_SIZE) / 2, true);
       this.player.invincible = 180;
       this.tanks.unshift(this.player);
       statusSpan.textContent = '▶ 进行中';
